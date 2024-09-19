@@ -1,0 +1,139 @@
+body {
+    background-color: navy;
+    background-image: url(./images/blue_stripes.jpg);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(256,256,256, 0.8);
+    padding: 1rem;
+    border-bottom: 3px solid navy;
+    margin-bottom: 1.5rem;
+}
+
+#title {
+    text-align: center;
+    color: navy;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    padding: 0 3rem;
+}
+
+.navBtn {
+    display: grid;
+    grid-template-columns: repeat(2, 5rem);
+    border: 0;
+}
+
+nav button {
+    font-size: 1rem;
+    border: 0;
+    background-color: transparent;
+}
+
+.aboutNav {
+    display: grid;
+    justify-items: end;
+}
+
+/* #content {
+    display: grid;
+    grid-template-columns: 1fr;
+} */
+
+.container {
+    display: grid;
+}
+
+
+/* HOME */
+#intro {
+    background-color: rgb(256,256,256, 0.5);
+    padding: 2rem 25%;
+    text-align: center;
+}
+
+.chefSpecs, .chefMenu {
+    text-align: center;
+    background-color: rgb(256,256,256, 0.7);
+    font-size: 1.5rem;
+    color: navy;
+}
+
+.specialties, .allMenu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    padding: 2% 25%;
+    background-color: rgb(256,256,256, 0.7);
+}
+.awardHeader{
+    text-align: center;
+    background-color: rgb(256,256,256, 0.7);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: navy;
+}
+
+.awards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    background-color: rgb(256,256,256, 0.7);
+    padding: 2% 35%;
+}
+
+.menu, .menuDiv{
+    height: 250px;
+}
+
+
+.award {
+    height: 150px;
+}
+
+
+.menuText {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: calc(-100% - 2%);
+    opacity: 0;
+    height: 250px;
+    background-color: black;
+}
+
+
+.menuText:hover {
+    opacity: 0.75;
+    color: white;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch center;
+    border: 1px solid black;
+    gap: 1rem;
+    background-color: navy;
+    padding: 0 1rem;
+
+}
+
+.city {
+    text-align: center;
+    background-color: white;
+    padding: 1rem 0;
+}
